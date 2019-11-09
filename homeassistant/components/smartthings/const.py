@@ -1,6 +1,6 @@
 """Constants used by the SmartThings component and platforms."""
-from datetime import timedelta
 import re
+from datetime import timedelta
 
 DOMAIN = "smartthings"
 
@@ -32,6 +32,7 @@ STORAGE_VERSION = 1
 # Ordered 'specific to least-specific platform' in order for capabilities
 # to be drawn-down and represented by the most appropriate platform.
 SUPPORTED_PLATFORMS = [
+    "vacuum",
     "climate",
     "fan",
     "light",
@@ -40,7 +41,7 @@ SUPPORTED_PLATFORMS = [
     "switch",
     "binary_sensor",
     "sensor",
-    "scene",
+    "scene"
 ]
 
 IGNORED_CAPABILITIES = [
