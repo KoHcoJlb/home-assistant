@@ -26,6 +26,7 @@ STORAGE_VERSION = 1
 # Ordered 'specific to least-specific platform' in order for capabilities
 # to be drawn-down and represented by the most appropriate platform.
 SUPPORTED_PLATFORMS = [
+    "vacuum",
     "climate",
     "fan",
     "light",
@@ -34,7 +35,7 @@ SUPPORTED_PLATFORMS = [
     "switch",
     "binary_sensor",
     "sensor",
-    "scene",
+    "scene"
 ]
 TOKEN_REFRESH_INTERVAL = timedelta(days=14)
 VAL_UID = "^(?:([0-9a-fA-F]{32})|([0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}))$"
